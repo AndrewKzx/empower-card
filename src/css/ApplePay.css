@@ -43,3 +43,23 @@ a{
   font-size: 1em;
   margin-top: 50px;
 }
+
+/* 01 */
+@media (min-width: 200px) {
+  /* this is the same as not using a media query... */
+  #cardContainer{
+    width: 90vw;  
+    height: 25vh; 
+    margin:auto
+
+  }
+}
+
+/* 2 */
+@media (min-width: 600px) and (orientation:landscape) {
+  #cardContainer{
+    width: 25vw;  
+    height: 30vh; 
+    margin:auto
+  }
+}
