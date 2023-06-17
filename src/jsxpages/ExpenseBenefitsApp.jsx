@@ -14,6 +14,7 @@ import MobileAllowance from "../components/MobileAllowance";
 import ProAllowance from "../components/ProfessionalAllowance";
 
 import BenefitCard from "../components/BenefitCard";
+import BarChart from '../components/BarChart';
 
 import "../css/main.css"
 import "../css/tailwind.css"
@@ -29,7 +30,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             </div>
             <CircularChart/>
             <div className='expense-chart-image'>
-                <img src={Chart} className="chart-image" alt="Chart Placeholder"/>
+                <BarChart
+                    data={[4500, 3200, 5700, 2800,  6100, 3900]} // Replace with your monthly data
+                />
             </div>
             <div className="text-xl font-bold p-5">
                 Full Benefits Entitlement
