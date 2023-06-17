@@ -10,7 +10,7 @@ export default function Navbar() {
      <div className="flex items-center flex-shrink-0">
        <img src={stcbank} className="w-130 h-20" alt="Logo" />
      </div>
-    <img class="h-13 w-12 rounded-full" src={profilePic} />  
+    <img className="h-13 w-12 rounded-full" src={profilePic} />  
    </nav>
  );
 }
