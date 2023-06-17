@@ -2,12 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import folder from "../img/folder.png"
-import ExpensesBox from "../img/expensesBox.png";
 import RecentTrans from "../img/RecentTrans.png";
 import theGoodLifeImg from "../img/theGoodLifeImg.png";
 
+import CircularChart from "../components/CircularChartIndex";
 import Cards from "../components/Cards";
 import Navbar from "../components/NavbarLogo";
+
+import PetrolAllowance from "../components/PetrolAllowance";
+import GymAllowance from "../components/GymHealth";
+import FlexiAllowance from "../components/FlexiAllowance";
 
 
 import "../css/index.css"
@@ -22,7 +26,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <p>Add your Card to your Wallet for Apple Pay</p>
       </a>
 
-      <img className="expensesImg" src={ExpensesBox} alt="box" />
+
+      <div className="text-xl font-bold p-5">
+          Expense and Benefits Details
+      </div>
+      <CircularChart/>
+      <div id='benefitContainer' style={{marginTop: "1em"}}>
+          <PetrolAllowance/>
+          <GymAllowance/>
+          <FlexiAllowance/>
+      </div>
       <div id='seeAll'>
         <a href="./src/pages/ExpenseBenefitsPage.html">See All</a>
       </div>
