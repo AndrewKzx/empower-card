@@ -12,7 +12,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <>
             <Navbar/>
             <div className="text-xl font-bold p-5">
-                Expense and FUCK Details he
+                Expense and Benefits Details
+            </div>
+            <CircularChart/>
+            <div className='expense-chart-image'>
+                <img src={Chart} className="chart-image" alt="Chart Placeholder"/>
+            </div>
+            <div className="text-xl font-bold p-5">
+                Full Benefits Entitlement
             </div>
 
 
