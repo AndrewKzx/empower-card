@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Navbar from "../components/NavbarLogo";
-import "../css/main.css"
+
+import "../css/tailwind.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

@@ -58,10 +58,10 @@ function CircularProgressBar() {
             Utilized
           </text>
         </svg>
-        <button className="rounded-button">
+        <a href="./RequestPage.html" className="rounded-button">
         <img src={Request} alt="Request Limit" className="button-image" />
             Request Limit Increase
-            </button>
+            </a>
       </div>
       
       <div className="info-container">

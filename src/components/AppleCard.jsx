@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../css/tailwindImport.css"
+
 import applePayCard from "../img/applePayCard.png"
 
 export default function Cards() {

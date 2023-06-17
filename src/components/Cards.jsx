@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../css/tailwindImport.css"
+
 import standardCharterLogo from "../img/standardCharterLogo.png"
 
 export default function Cards() {

@@ -7,6 +7,7 @@ import cardReader from "../img/cardReader.png";
 
 
 import "../css/ApplePay.css"
+import "../css/tailwind.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
