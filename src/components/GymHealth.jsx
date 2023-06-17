@@ -19,9 +19,9 @@ function CircularProgressBar() {
   };
 
   return (
-    <div className="gym-container">
+
       <div className="gym-rounded-box">
-        <h3 className="gym-box-title">Gym Allowance</h3>
+        <h3 className="gym-box-title">Gym <br></br> Allowance</h3>
         <svg className="gym-progress-bar">
           <circle
             className="text-lightgray"
@@ -60,11 +60,6 @@ function CircularProgressBar() {
           </text>
         </svg>
       </div>
-      
-      
-
-
-    </div>
   );
 }
 

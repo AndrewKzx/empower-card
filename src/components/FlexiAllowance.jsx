@@ -21,7 +21,7 @@ function CircularProgressBar() {
   return (
     <div className="flexi-container">
       <div className="flexi-rounded-box">
-        <h3 className="flexi-box-title">Flexi Allowance</h3>
+        <h3 className="flexi-box-title">Flexi <br></br> Allowance</h3>
         <svg className="flexi-progress-bar">
           <circle
             className="text-lightgray"

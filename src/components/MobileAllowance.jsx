@@ -21,7 +21,7 @@ function CircularProgressBar() {
   return (
     <div className="mobile-radial">
       <div className="mobile-rounded-box">
-        <h3 className="mobile-box-title">Mobile Allowance</h3>
+        <h3 className="mobile-box-title">Mobile <br></br> Allowance</h3>
         <svg className="mobile-progress-bar">
           <circle
             className="text-lightgray"

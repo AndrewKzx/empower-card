@@ -21,7 +21,7 @@ function CircularProgressBar() {
   return (
     <div className="petrol-radial">
       <div className="petrol-rounded-box">
-        <h3 className="petrol-box-title">Petrol Allowance</h3>
+        <h3 className="petrol-box-title">Petrol <br></br> Allowance</h3>
         <svg className="petrol-progress-bar">
           <circle
             className="text-lightgray"

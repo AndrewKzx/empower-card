@@ -1,16 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import Nabar2 from "../components/Navbar2";
+import Chart from "../img/chartplaceholder.png";
+
 import Navbar from "../components/NavbarLogo";
 import CircularChart from "../components/CircularChart";
-import Chart from "../img/chartplaceholder.png";
 import PetrolAllowance from "../components/PetrolAllowance";
 import GymAllowance from "../components/GymHealth";
 import FlexiAllowance from "../components/FlexiAllowance";
 import TravelAllowance from "../components/TravelAllowance";
 import MobileAllowance from "../components/MobileAllowance";
 import ProAllowance from "../components/ProfessionalAllowance";
+
 import "../css/main.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -27,20 +28,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <div className="text-xl font-bold p-5">
                 Full Benefits Entitlement
             </div>
-           
-            <PetrolAllowance/>
-            <GymAllowance/>
-            <FlexiAllowance/>
-            <TravelAllowance/>
-            <MobileAllowance/>
-            <ProAllowance/>
-    
-            
-            
-            
-           
 
+            <div id='benefitContainer'>
+                <PetrolAllowance/>
+                <GymAllowance/>
+                <FlexiAllowance/>
+            </div>
 
+            <div id='benefitContainer2'>
+                <TravelAllowance/>
+                <MobileAllowance/>
+                <ProAllowance/>
+            </div>
         </>
   </React.StrictMode>,
 )

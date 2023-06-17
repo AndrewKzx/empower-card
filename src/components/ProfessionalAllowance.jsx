@@ -21,7 +21,7 @@ function CircularProgressBar() {
   return (
     <div className="pro-radial">
       <div className="pro-rounded-box">
-        <h3 className="pro-box-title">Professional Development Allowance</h3>
+        <h3 className="pro-box-title">Development <br></br> Allowance</h3>
         <svg className="pro-progress-bar">
           <circle
             className="text-lightgray"
