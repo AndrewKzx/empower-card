@@ -15,6 +15,7 @@ import FlexiAllowance from "../components/FlexiAllowance";
 
 
 import "../css/index.css"
+import "../css/tailwind.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
