@@ -55,22 +55,52 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <BenefitCard chartData={[70]} label='Flexi Benefits' />
       </div>
 
-      <div className='flex justify-end my-4 px-6'>
+      <div className='flex justify-end my-4 px-4'>
+        <button className='bg-[#2B69F5] text-white py-1 px-8 text-sm rounded-lg'>
+          <a href="./src/pages/ExpenseBenefitsPage.html">See All</a>
+        </button>
+      </div>
+
+      <div className="text-xl font-bold p-4">
+        Recent Transactions
+      </div>
+
+      <div className='px-4'>
+      <div className="flex flex-col space-y-6">
+        <div className="flex">
+          <div className="flex flex-col w-3/4">
+            <div>GRAB RIDES-EC</div>
+            <div className="text-xs text-[#949494]">Taxi & Limousines</div>
+
+          </div>
+          <div className="w-1/4 text-[#F24E30]">-RM 25.40</div>
+        </div>
+        <div className="flex">
+          <div className="flex flex-col w-3/4">
+            <div>Anytime Fitness</div>
+            <div className="text-xs text-[#949494]">Health</div>
+
+          </div>
+          <div className="w-1/4 text-[#F24E30]">-RM 190.00</div>
+        </div>
+        <div className="flex">
+          <div className="flex flex-col w-3/4">
+            <div>Tony Roma's</div>
+            <div className="text-xs text-[#949494]">Food and Beverages</div>
+
+          </div>
+          <div className="w-1/4 text-[#F24E30]">-RM 98.10</div>
+        </div>
+      </div>
+      </div>
+
+      <div className='flex justify-end my-4 px-4 mb-24'>
         <button className='bg-[#2B69F5] text-white py-1 px-8 text-sm rounded-lg'>
           <a href="./src/pages/ExpenseBenefitsPage.html">See All</a>
         </button>
       </div>
 
 
-      <img className="recentTransImg" src={RecentTrans} alt="box" />
-      <div id='seeAll'>
-        <a href=".">View All</a>
-      </div>
-
-      <img className="recentTransImg" src={theGoodLifeImg} alt="box" />
-      <div id='seeAll'>
-        <a href=".">View All</a>
-      </div>
 
     </>
   </React.StrictMode>,
