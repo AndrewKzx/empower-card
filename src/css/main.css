@@ -18,26 +18,66 @@ body {
   align-items: center;
   justify-content: center;
   width: fit-content;
-  padding: 12px;
+  padding: 16px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: 28vh;
 }
 
 .progress-bar {
-  width: 240px;
-  height: 240px;
+  width: 180px;
+  height: 180px;
 }
 
 .rounded-button {
-  margin-top: 16px;
   padding: 8px 16px;
-  background-color: #5e5eff;
+  background-color: #72A8F9;
   color: #ffffff;
-  border-radius: 24px;
+  border-radius: 12px;
   border: none;
   cursor: pointer;
 }
 
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #9087FB;
+    border-radius: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .info-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 14vh;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 14px;
+  }
+  
+  .info-value {
+    color: #ffffff;
+  }
+
+  .expense-chart-image{
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+  }
+
+  .chart-image {
+    max-width: 100%;
+    height: 25vh
+  }
+  
   
   
