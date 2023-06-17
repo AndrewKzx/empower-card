@@ -10,7 +10,7 @@ export default function Navbar2() {
      <div className="flex items-center flex-shrink-0">
        <img src={navBar} className="object-scale-down w-15 h-10" alt="Logo" />
      </div>
-    <img class="object-scale-down w-8 h-9" src={bell} />  
+    <img className="object-scale-down w-8 h-9" src={bell} />  
    </nav>
  );
 }
