@@ -23,42 +23,44 @@ const chartData = [32.1]
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
-      <Navbar/>
+      <Navbar />
       <br></br>
-      <Cards /> 
+      <Cards />
       <a className="applePay" href="./src/pages/ApplePay.html">
-      <img src={folder} alt="Folder" width="10%" />
-      <p>Add your Card to your Wallet for Apple Pay</p>
+        <img src={folder} alt="Folder" width="10%" />
+        <p>Add your Card to your Wallet for Apple Pay</p>
       </a>
 
 
       <div className="text-xl font-bold p-5">
-          Expense and Benefits Overview
+        Expense and Benefits Overview
       </div>
-      {/* <CircularChart/> */}
-      <div className='flex px-8'>
-      <div className='w-1/2'>
-        <RadialBarChart chartData={chartData} label='% Utilized' color='#2B69F5'/>
-      </div>
-      <div className='w-1/2 bg-[#9087FB] ml-2 rounded-xl flex flex-col p-4'>
-        <h3 className='text-white text-sm font-bold'>Utilized</h3>
-        <h3 className='text-white text-sm'>RM 321.00</h3>
-        <br></br>
-        <h3 className='text-white text-sm font-bold'>Card Limit</h3>
-        <h3 className='text-white text-sm'>RM 1000.00</h3>
-      </div>
-      </div>
-      
-      <div id='benefitContainer' style={{marginTop: "1em"}}>
-          <BenefitCard chartData={[30]} label='Petrol Allowance'/>
-          <BenefitCard chartData={[40]} label='Gym Allowance'/>
-          <BenefitCard chartData={[70]} label='Flexi Benefits'/>
+      <div className='flex px-4'>
+        <div className='w-1/2 rounded-xl border border-[#5C97F0]'>
+          <h3 className='text-md text-center font-bold mt-4 text-[#2B69F5]'>Total Utilization</h3>
+          <RadialBarChart chartData={chartData} label='% Utilized' color='#2B69F5' />
+        </div>
+        <div className='w-1/2 bg-[#9087FB] ml-2 rounded-xl flex flex-col p-4'>
+          <h3 className='text-white text-sm font-bold'>Utilized</h3>
+          <h3 className='text-white text-sm'>RM 321.00</h3>
+          <br></br>
+          <h3 className='text-white text-sm font-bold'>Card Limit</h3>
+          <h3 className='text-white text-sm'>RM 1000.00</h3>
+        </div>
       </div>
 
-      
-      <div id='seeAll'>
-        <a href="./src/pages/ExpenseBenefitsPage.html">See All</a>
+      <div style={{ marginTop: "1em" }} className='px-4 flex space-x-2'>
+        <BenefitCard chartData={[30]} label='Petrol Allowance' />
+        <BenefitCard chartData={[40]} label='Gym Allowance' />
+        <BenefitCard chartData={[70]} label='Flexi Benefits' />
       </div>
+
+      <div className='flex justify-end my-4 px-6'>
+        <button className='bg-[#2B69F5] text-white py-1 px-8 text-sm rounded-lg'>
+          <a href="./src/pages/ExpenseBenefitsPage.html">See All</a>
+        </button>
+      </div>
+
 
       <img className="recentTransImg" src={RecentTrans} alt="box" />
       <div id='seeAll'>
@@ -69,7 +71,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <div id='seeAll'>
         <a href=".">View All</a>
       </div>
-      
+
     </>
   </React.StrictMode>,
 )
