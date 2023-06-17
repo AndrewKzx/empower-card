@@ -24,3 +24,33 @@ body {
   font-weight: bold;
   font-size: 0.72em;
 }
+
+.expensesImg{
+  display: block;
+  margin: 10px auto;
+}
+
+.recentTransImg{
+  display: block;
+  margin: 20px auto 10px auto;
+  width: 80%;
+}
+
+#seeAll{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 5px;
+}
+
+#seeAll a{
+  display: block;
+  margin-left: 6px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #2B69F5;
+  border-radius: 10px;
+  font-size: 1em;
+}
