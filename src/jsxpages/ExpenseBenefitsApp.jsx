@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <>
             <Navbar/>
             <div className="text-xl font-bold p-5">
-                Expense and FUCK Details he
+                Expense and FUCK Details her
             </div>
         </>
   </React.StrictMode>,

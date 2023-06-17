@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: white;
+}
+
+.applePay{
+  width: 80%;
+  height: 20%;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+  border-radius: 10px;
+  margin: 20px auto;
+
+}
+.applePay p{
+  color: white;
+  font-weight: bold;
+  font-size: 0.72em;
+}
