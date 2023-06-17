@@ -4,6 +4,7 @@ import Navbar from "../components/NavbarLogo";
 
 import "../css/tailwind.css"
 import "../css/Request.css"
+import Modal from '../components/ModalPopup';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -24,12 +25,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 </select>
                 <label htmlFor="reason" class = "mt-6 mb-4 text-sm">Reason for Limit Increase</label>
                 <textarea name="reason"  class = "border rounded-lg pl-2 w-80 h-36 pt-1" style={{borderColor: "#2B69F5"}} cols="30" rows="10"></textarea>
-
-                <a href="./ExpenseBenefitsPage.html" class = "border rounded-lg  " style={{backgroundColor: "#2B69F5"}}>
+               {/* <a href="./ExpenseBenefitsPage.html" class = "border rounded-lg mt-6 " style={{backgroundColor: "#2B69F5"}}>
                   Submit Request
-                </a>
+                </a> */}
                 {/* <input class = "h-8 w-28 border rounded-lg text-sm mt-6 text-white" style={{backgroundColor: "#2B69F5", fontFamily: "Roboto"}} type="submit" value="Submit Request" /> */}
               </form>
+              <Modal/>
               </div>
               
           </>
