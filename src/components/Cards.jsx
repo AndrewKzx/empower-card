@@ -6,7 +6,7 @@ import standardCharterLogo from "../img/stanchart-logo.png"
 export default function Cards() {
 
  return (
-    <div id="cardContainer" className="rounded-xl relative text-white">
+    <div id="cardContainer" className="rounded-xl relative text-white shadow-2xl">
         <img id='card' className="relative object-cover w-full h-full rounded-xl" src="https://i.imgur.com/kGkSg1v.png" />
         <div className="w-full px-8 absolute top-6">
             <div className="flex flex-col justify-between">

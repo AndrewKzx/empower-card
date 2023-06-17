@@ -51,14 +51,21 @@ body {
   font-size: 1rem;
 }
 
+#cardContainer{
+  transition: transform 1s;
+}
+
+#cardContainer:hover{
+  transform: scale(1.10);
+}
+
+
 /* 01 */
 @media (min-width: 200px) {
-  /* this is the same as not using a media query... */
   #cardContainer{
     width: 90vw;  
     height: 25vh; 
     margin:auto
-
   }
 }
 
