@@ -10,7 +10,6 @@ import Cards from "../components/Cards";
 import Navbar from "../components/NavbarLogo";
 
 
-import CircularChart from "../components/CircularChart";
 import "../css/index.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,10 +17,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <>
       <Navbar/>
       <Cards /> 
-      <button className="applePay">
+      <a className="applePay" href="./src/pages/ApplePay.html">
       <img src={folder} alt="Folder" width="10%" />
       <p>Add your Card to your Wallet for Apple Pay</p>
-      </button>
+      </a>
 
       <img className="expensesImg" src={ExpensesBox} alt="box" />
       <div id='seeAll'>
