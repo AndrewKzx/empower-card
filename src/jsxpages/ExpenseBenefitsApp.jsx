@@ -6,7 +6,7 @@ import Chart from "../img/chartplaceholder.png";
 import Navbar from "../components/NavbarLogo";
 import CircularChart from "../components/CircularChart";
 
-import PetrolAllowance from "../components/PetrolAllowance";
+import PetrolAllowance from "../components/BenefitCard";
 import GymAllowance from "../components/GymHealth";
 import FlexiAllowance from "../components/FlexiAllowance";
 import TravelAllowance from "../components/TravelAllowance";

@@ -9,18 +9,22 @@ import CircularChart from "../components/CircularChartIndex";
 import Cards from "../components/Cards";
 import Navbar from "../components/NavbarLogo";
 
-import PetrolAllowance from "../components/PetrolAllowance";
+import BenefitCard from "../components/BenefitCard";
 import GymAllowance from "../components/GymHealth";
 import FlexiAllowance from "../components/FlexiAllowance";
 
 
 import "../css/index.css"
 import "../css/tailwind.css"
+import RadialBarChart from '../components/RadialBarChart';
+
+const chartData = [32.1]
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
       <Navbar/>
+      <br></br>
       <Cards /> 
       <a className="applePay" href="./src/pages/ApplePay.html">
       <img src={folder} alt="Folder" width="10%" />
@@ -29,14 +33,29 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
       <div className="text-xl font-bold p-5">
-          Expense and Benefits Details
+          Expense and Benefits Overview
       </div>
-      <CircularChart/>
+      {/* <CircularChart/> */}
+      <div className='flex px-8'>
+      <div className='w-1/2'>
+        <RadialBarChart chartData={chartData} label='% Utilized' color='#2B69F5'/>
+      </div>
+      <div className='w-1/2 bg-[#9087FB] ml-2 rounded-xl flex flex-col p-4'>
+        <h3 className='text-white text-sm font-bold'>Utilized</h3>
+        <h3 className='text-white text-sm'>RM 321.00</h3>
+        <br></br>
+        <h3 className='text-white text-sm font-bold'>Card Limit</h3>
+        <h3 className='text-white text-sm'>RM 1000.00</h3>
+      </div>
+      </div>
+      
       <div id='benefitContainer' style={{marginTop: "1em"}}>
-          <PetrolAllowance/>
-          <GymAllowance/>
-          <FlexiAllowance/>
+          <BenefitCard chartData={[30]} label='Petrol Allowance'/>
+          <BenefitCard chartData={[40]} label='Gym Allowance'/>
+          <BenefitCard chartData={[70]} label='Flexi Benefits'/>
       </div>
+
+      
       <div id='seeAll'>
         <a href="./src/pages/ExpenseBenefitsPage.html">See All</a>
       </div>
