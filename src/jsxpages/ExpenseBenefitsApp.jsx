@@ -14,6 +14,7 @@ import MobileAllowance from "../components/MobileAllowance";
 import ProAllowance from "../components/ProfessionalAllowance";
 
 import "../css/main.css"
+import "../css/tailwind.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -41,6 +42,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <MobileAllowance/>
                 <ProAllowance/>
             </div>
+            <div id='returnBox'>
+                <a style={{color:"white", backgroundColor:"blue", padding:"5px", borderRadius:"5px"}} href='../../index.html'>Return</a>
+            </div>
+            
         </>
   </React.StrictMode>,
 )
