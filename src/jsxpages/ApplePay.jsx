@@ -20,8 +20,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <p>
         Hold Near Reader
       </p>
-      <a href="../../index.html">Return</a>
+      
     </div>
+    <a style={{color: "white"}}  href="../../index.html">Return</a>
       
     </>
   </React.StrictMode>,
