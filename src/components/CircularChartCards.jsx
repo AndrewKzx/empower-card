@@ -55,25 +55,6 @@ function CircularProgressBar() {
             Utilized
           </text>
         </svg>
-        <button className="rounded-button">Request Limit Increase</button>
-      </div>
-      
-      <div className="info-container">
-        <div className="info-box">
-          <div className="info-row">
-            <span className="info-label">Card Limit</span>
-            <span className="info-value">RM 1000.00</span>
-          </div>
-          <div className="info-row">
-            <span className="info-label">Utilized</span>
-            <span className="info-value">RM 321.00</span>
-          </div>
-          <div className="info-row">
-            <span className="info-label">Balance</span>
-            <span className="info-value">RM 679.00</span>
-          </div>
-          {/* Add more info rows as needed */}
-        </div>
       </div>
     </div>
   );
