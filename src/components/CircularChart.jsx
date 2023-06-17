@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
+import Request from '../img/RequestLimitIcon.png'
 
 function CircularProgressBar() {
   const [progress, setProgress] = useState(70); // Set the progress value here (between 0 to 100)
   const remainingProgress = 100 - progress;
   const circumference = 2 * Math.PI * 56;
-  const offset = circumference - (progress / 100) * circumference;
+  const offset = (remainingProgress / 100) * circumference; // Calculate offset based on remaining progress
 
   const progressStyle = {
     strokeDasharray: circumference,
     strokeDashoffset: offset,
     stroke: '#72A8F9',
-    strokeWidth: 10, 
-    strokeLinecap: 'round', 
+    strokeWidth: 10,
+    strokeLinecap: 'round',
     strokeBorderColor: '#000000',
+    transform: 'rotate(-90deg)', // Rotate the progress bar to face left
+    transformOrigin: 'center', // Set the rotation origin to the center
   };
 
   return (
@@ -55,7 +58,10 @@ function CircularProgressBar() {
             Utilized
           </text>
         </svg>
-        <button className="rounded-button">Request Limit Increase</button>
+        <button className="rounded-button">
+        <img src={Request} alt="Request Limit" className="button-image" />
+            Request Limit Increase
+            </button>
       </div>
       
       <div className="info-container">
@@ -72,7 +78,6 @@ function CircularProgressBar() {
             <span className="info-label">Balance</span>
             <span className="info-value">RM 679.00</span>
           </div>
-          {/* Add more info rows as needed */}
         </div>
       </div>
     </div>

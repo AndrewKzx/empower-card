@@ -5,6 +5,7 @@ import Nabar2 from "../components/Navbar2";
 import Navbar from "../components/NavbarLogo";
 import CircularChart from "../components/CircularChart";
 import Chart from "../img/chartplaceholder.png";
+import ChartDeck from "../img/expensedeck.png";
 import "../css/main.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <div className="text-xl font-bold p-5">
                 Full Benefits Entitlement
             </div>
+            <div className='expense-chart-deck-image'>
+            <img src={ChartDeck} className="chart-deck-image" alt="Chart Placeholder"/>
+            </div>
+           
 
 
         </>
