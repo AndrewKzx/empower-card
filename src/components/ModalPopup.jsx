@@ -5,7 +5,7 @@ export default function Modal() {
   return (
     <>
       <button
-        className="h-8 w-28 border rounded-lg text-sm mt-6 text-white"
+        className="h-8 w-full border rounded-lg text-sm mt-6 text-white"
         style={{ backgroundColor: "#2B69F5", fontFamily: "Roboto" }}
         type="button"
         onClick={() => setShowModal(true)}
