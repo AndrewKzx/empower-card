@@ -51,9 +51,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <BenefitCard chartData={[80]} label='Pro Development Allowance' />
             </div>
 
-            <div id='returnBox'>
-                <a style={{color:"white", backgroundColor:"blue", padding:"5px", borderRadius:"5px"}} href='../../index.html'>Return</a>
+            <div className='flex justify-end my-4 px-4 mb-24'>
+                <button className='bg-[#2B69F5] text-white py-1 px-8 text-sm rounded-lg'>
+                <a href="../../index.html">See All</a>
+                </button>
             </div>
+
+            
             
         </>
   </React.StrictMode>,
