@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import stcbank from "../img/stcBank.jpg"
 import profilePic from "../img/randomPic.jpeg"
+import profilePic2 from "../img/naz_profilepic.png"
 
 export default function Navbar() {
 
@@ -10,7 +11,7 @@ export default function Navbar() {
      <div className="flex items-center flex-shrink-0">
        <img src={stcbank} className="w-[120px]" alt="Logo" />
      </div>
-    <img className="w-12 rounded-full" src={profilePic} />  
+    <img className="w-12 rounded-full" src={profilePic2} />  
    </nav>
  );
 }
