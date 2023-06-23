@@ -56,9 +56,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <a href="../../index.html">See All</a>
                 </button>
             </div>
-
-            
-            
+      
         </>
   </React.StrictMode>,
 )
