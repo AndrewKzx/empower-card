@@ -40,7 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
             <div style={{ marginTop: "1em" }} className='px-4 flex space-x-2'>
                 <BenefitCard chartData={[30]} label='Petrol Allowance' />
-                <BenefitCard chartData={[10]} label='Gym Allowance' />
+                <BenefitCard chartData={[40]} label='Gym Allowance' />
                 <BenefitCard chartData={[70]} label='Flexi Benefits' />
             </div>
 
